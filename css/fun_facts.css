@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif, Tahoma;
+    --bg-primary: #35524a;
+    --bg-secondary: #8d6e30;
+    --font-primary: #E8EBE4;
+    --font-secondary: #627C85;
+    --backup-color: #89776d;
+}
+
+body{
+    height: 100vh;
+    background: var(--bg-primary);
+}
+
+header{
+    background: var(--bg-primary);
+    padding: 25px;
+}
+
+header nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+header nav ul li{
+    list-style: none;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: var(--font-primary);
+    font-size: 20px;
+    transition: color 0.3 ease;
+}
+
+header nav ul li:hover a{
+    color: var(--backup-color);
+}
+
+header h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 55px;
+    color: var(--font-primary);
+    padding-top: 15px;
+}
+
+h2{
+    font-size: 35px;
+    padding-bottom: 15px;
+}
+
+p{
+    font-size: 20px;
+}
+
+.book-song{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.book{
+    padding: 15px;
+    background: var(--bg-secondary);
+    height: 550px;
+    width: 50%;
+}
+
+.book-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.book-about{
+    padding: 15px;
+}
+
+.book-about h3{
+    font-size: 27px;
+}
+
+.book-about div{
+    font-size: 17px;
+    padding-bottom: 20px;
+    padding-left: 2px;
+}
+
+.book-about p a{
+    text-decoration: none;
+    color: var(--font-primary);
+    transition: color 0.3 ease;
+}
+
+.book-about p a:hover{
+    color: var(--font-secondary);
+}
+
+.fav-song{
+    background: var(--backup-color);
+    height: 550px;
+    width: 50%;
+    padding: 15px;
+}
+
+.fav-song .song-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 44px;
+}
+
+.fav-song .song-info{
+    font-size: 27px;
+    padding: 15px;
+    padding-left: 0;
+}
+
+.fav-song p{
+    padding-top: 15px;
+}
+
+.fav-song p a{
+    text-decoration: none;
+    color: var(--font-primary);
+    transition: color 0.3 ease;
+}
+
+.fav-song p a:hover{
+    color: var(--font-secondary);
+}
+
+.movie{
+    background: var(--font-secondary);
+    text-align: center;
+    padding: 15px;
+}
+
+.movie h3{
+    font-size: 27px;
+}
+
+.movie .movie-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.movie .movie-wrapper .movie-about{
+    width: 40%;
+}
+
+footer{
+    padding-top: 20px;
+}
+
+footer p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+}
+
+footer .contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--font-primary);
+    font-size: 17px;
+    padding: 20px;
+    transition: color 0.3 ease;
+}
+
+footer .contact:hover{
+    color: var(--backup-color);
+}

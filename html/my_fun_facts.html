@@ -4,7 +4,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Emma Farrell's Portfolio</title>
-            <link rel="icon" type="image/x-icon" href="./assets/img/8-bit-snail.jpg">
+            <link rel="icon" type="image/x-icon" href="../assets/img/8-bit-snail.jpg">
+            <link rel="stylesheet" href="../css/fun_facts.css">
     </head>
     <header>
         <nav>
@@ -18,36 +19,59 @@
     </header>
     <body>
         <!-- start favorite book -->
-        <section class="fav-book">
-            <h2>My Current Favorite Book</h2>
-            <img id="book-cover" src="../assets/img/book_cover.jpg" alt="the cover of a book">
-            <label for="book-cover"><h3>The 7 1/2 Deaths of Evelyn Hardcastle</h3> <span>by Stuart Turton</span></label>
-            <p>I really enjoy how this book builds on itself. The main character jumps bodies several times in this book, and there are little details they experience as each person that come back later in ways you wouldn't expect. Check it out on Amazon <a href="https://www.amazon.com/%C2%BD-Deaths-Evelyn-Hardcastle/dp/149267012X/ref=sr_1_1?crid=269DEJME2A0VC&dib=eyJ2IjoiMSJ9.WUGRLJTUiglm3weAPRKyz01Cmu2CTqGMH_9FuZ2lSCFdiiS5qmZ6l-FGSoArde1inRZUkoyWC5KsEDvVbjEkLaEoJajqdAJVLwHC04TDDZa4FuCGGPoOBEN0LyXEq5dYVvsRzQzeJza2hdjdAiCmj9i9Xz0m_bBLNodtbqfyOJqdqBQPb04_vqE3XNQmNPw_6ya-UJbuk11H26Mbk7_gvSLUM2qIJdKHrvw-9AfYUVU.pm6lNRhqD9c74b_baey6-9ZNjYPmqUUOFqhfsBqFDFw&dib_tag=se&keywords=the+7+1%2F2+deaths+of+evelyn+hardcastle&qid=1728076066&sprefix=the+7+1%2F2%2Caps%2C494&sr=8-1">here.</a></p>
-        </section>
+        <section class="book-song">
+            <div class="book">
+                <h2>My Current Favorite Book</h2>
+                <div class="book-info">
+                    <img id="book-cover" src="../assets/img/book_cover.jpg" alt="the cover of a book">
+                    <div class="book-about">
+                        <h3>The 7 1/2 Deaths of Evelyn Hardcastle</h3> <div>by Stuart Turton</div>
+                        <p>I really enjoy how this book builds on itself. The main character jumps bodies several times in this book, and there are little details they experience as each person that come back later in ways you wouldn't expect. Check it out on Amazon <a href="https://www.amazon.com/%C2%BD-Deaths-Evelyn-Hardcastle/dp/149267012X/ref=sr_1_1?crid=269DEJME2A0VC&dib=eyJ2IjoiMSJ9.WUGRLJTUiglm3weAPRKyz01Cmu2CTqGMH_9FuZ2lSCFdiiS5qmZ6l-FGSoArde1inRZUkoyWC5KsEDvVbjEkLaEoJajqdAJVLwHC04TDDZa4FuCGGPoOBEN0LyXEq5dYVvsRzQzeJza2hdjdAiCmj9i9Xz0m_bBLNodtbqfyOJqdqBQPb04_vqE3XNQmNPw_6ya-UJbuk11H26Mbk7_gvSLUM2qIJdKHrvw-9AfYUVU.pm6lNRhqD9c74b_baey6-9ZNjYPmqUUOFqhfsBqFDFw&dib_tag=se&keywords=the+7+1%2F2+deaths+of+evelyn+hardcastle&qid=1728076066&sprefix=the+7+1%2F2%2Caps%2C494&sr=8-1">here.</a></p>
+                    </div>
+                </div>
+            </div>
         <!-- end favorite book -->
 
         <!-- start favorite song -->
-        <section class="fav-song">
-            <h2>My Current Favorite Song</h2>
-            <p class="song-info">
-                Spillways by Ghost
-            </p>
-            <audio src="../assets/audio/trimmed_spillways.mp3" controls></audio>
-            <div>
-            <a href="https://www.youtube.com/watch?v=u9DV1eHQpcA">Click here</a> to hear the whole song on Youtube.
+            <div class="fav-song">
+                <h2>My Current Favorite Song</h2>
+                <div class="song-wrapper">
+                    <div class="details">
+                        <h3 class="song-info">
+                            Spillways by Ghost
+                        </h3>
+                        <audio src="../assets/audio/trimmed_spillways.mp3" controls></audio>
+                        <div>
+                            <p><a href="https://www.youtube.com/watch?v=u9DV1eHQpcA">Click here</a> to hear the whole song on Youtube.</p>
+                        </div>
+                    </div>
+                    <div class="album">
+                        <img src="../assets/img/impera.jpg" alt="Ghost's Impera album cover">
+                    </div>
+                </div>
             </div>
         </section>
         <!-- end favorite song -->
 
         <!-- start favorite movie -->
-        <section>
-            <h2>My Current Favorite Movie</h2>
-            <iframe width="800" height="415" src="https://www.youtube.com/embed/JIdw2B6zipc" frameborder="0"></iframe>
+        <section class="fav-movie">
+            <div class="movie">
+                <h2>My Current Favorite Movie</h2>
+                <div class="movie-wrapper">
+                    <div class="movie-about">
+                        <h3>The Thing (2011)</h3>
+                        <p class="synopsis">
+                            After Norwegian researchers discover an alien ship buried in the ice, paleontologist Kate Lloyd (Mary Elizabeth Winstead) joins the team at the isolated Arctic outpost to investigate. She finds an organism that appears to have perished in the crash eons ago but, in fact, is about to awake. Freed from its icy prison, the insidious life-form goes on the attack. Paranoia spreads like wildfire among the crew as they fight to survive against a creature that assumes the shapes of its victims. <a href="https://www.rottentomatoes.com/m/the_thing_2011">(Rotten Tomatoes)</a>
+                        </p>
+                    </div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/JIdw2B6zipc?si=o3mGir1X9t3zxwql" frameborder="0" controls></iframe>
+                </div>
+            </div>
         </section>
         <!-- end favorite movie -->
     </body>
     <footer>
         <p>Copyright Emma Farrell 2024</p>
-        <a href="mailto:efarrell@oakland.edu" class="contact">Email Me!</a>
+        <p><a href="mailto:efarrell@oakland.edu" class="contact">Email Me!</a></p>
     </footer>
 </html>

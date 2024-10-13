@@ -1,41 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Emma Farrell's Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="./assets/img/8-bit-snail.jpg">
-</head>
-    <header>
-        <div class="primary-heading">
-            <h1>Emma Farrell's Portfolio</h1>
+    <link rel="icon" type="image/x-icon" href="./assets/img/8-bit-snail.jpg" />
+    <link rel="stylesheet" href="./css/portfolio_website.css" />
+  </head>
+  <header class="navbar">
+    <div class="primary-heading">
+      <h1>Emma Farrell's Portfolio</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="./html/my_resume.html">Resume</a></li>
+        <li><a href="./html/my_fun_facts.html">Fun Facts</a></li>
+      </ul>
+    </nav>
+  </header>
+  <body>
+    <!-- about me section -->
+    <div class="me">
+      <img
+        id="self-portrait"
+        src="./assets/img/portfolio-picture.jpg"
+        alt="a picture of Emma Farrell"
+        height="390"
+        width="350"
+      />
+      <!--<div>"Keep your face always toward the sunshine — and shadows will fall behind you." —Walt Whitman</div>-->
+      <div class="me-things">
+        <h2>A Little About Me...</h2>
+        <p class="elevator-pitch">
+          Hello, my name is Emma Farrell. I am currently a senior at Oakland
+          University, though I still have a handful of semesters's worth of
+          classes left. I transferred to OU from Oakland Community College two
+          years ago, and have since changed my major to Information Technology. As
+          of right now, I don't have a specialization selected, and am actively
+          researching my options to decide what will be best for me. I am very
+          interested in coding projects, and hope to hone my skills in my
+          remaining time here at OU. I always strive to learn as much as I can,
+          and to do as much as I can with what I know! To learn more about me,
+          check out my <a href="./html/my_resume.html">Resume</a> and
+          <a href="./html/my_fun_facts.html">Fun Facts</a> pages.
+        </p>
+        <div class="quote">
+        "Keep your face always toward the sunshine — and shadows will fall behind
+        you." —Walt Whitman
         </div>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="./html/my_resume.html">Resume</a></li>
-                <li><a href="./html/my_fun_facts.html">Fun Facts</a></li>
-            </ul>
-        </nav>
-    </header>
-    <body>
-        <!-- about me section -->
-        <div class="me">
-            <img id="self-portrait" src="./assets/img/portfolio-picture.jpg" alt="a picture of Emma Farrell" height="600" width="350">
-            <code>"Keep your face always toward the sunshine — and shadows will fall behind you." —Walt Whitman</code>
-            <p class="elevator-pitch">
-                Hello, my name is Emma Farrell. I am currently a senior at Oakland University, though I still have a handful of semesters's worth of classes left. I transferred to OU from Oakland Community College two years ago, and have since changed my major to Information Technology. As of right now, I don't have a specialization selected, and am actively researching my options and what will be best for me. I am very interested in coding projects, and hope to hone my skills in my remaining time here at OU. I always strive to learn as much as I can, and to do as much as I can with what I know! To learn more about me, check out my <a href="./html/my_resume.html">Resume</a> and <a href="./html/my_fun_facts.html">Fun Facts</a> pages.
-            </p>
-        </div>
-        <!-- progress bar -->
-        <div class="progress">
-            <label for="degree">Progress to degree:</label>
-            <progress id="degree" value="71" max="100"></progress> 71%
-        </div>
-        <hr>
-    </body>
-    <footer>
-        <p>Copyright Emma Farrell 2024</p>
-        <a href="mailto:efarrell@oakland.edu" class="contact">Email Me!</a>
-    </footer>
+      </div>  
+    </div>
+    <!-- progress bar -->
+    <div class="degree-progress">
+      <label for="degree">Progress to degree:</label>
+      <progress id="degree" value="71" max="100"></progress>
+      <span>71%</span>
+    </div>
+  </body>
+  <footer>
+    <p>Copyright Emma Farrell 2024</p>
+    <p><a href="mailto:efarrell@oakland.edu" class="contact">Email Me!</a></p>
+  </footer>
 </html>
